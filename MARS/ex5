@@ -1,0 +1,29 @@
+.data
+source: .word 7, 8, 9, 10, 8   # 定义一个数组 source，包含 5 个整数
+
+.text
+.globl main
+
+main:
+    la $t1, source             # 将数组 source 的地址加载到 $t1
+    lw $t2, 0($t1)             # 将数组的第一个元素加载到 $t2，初始化为最小值
+    move $t3, $zero            # 将 $t3 初始化为 0，用于循环计数
+
+loop:
+    lw $t4, 0($t1)             # 加载当前数组元素到 $t4
+    addi $t1, $t1, 4           # 指向数组中的下一个元素（每个元素 4 字节）
+    addi $t3, $t3, 1           # 循环计数器 $t3 加 1
+
+    ble $t4, $t2, updata       # 如果当前元素小于等于 $t2（当前最小值），跳转到 updata 进行更新
+    bne $t3, 5, loop           # 如果 $t3 不等于 5，继续循环
+
+updata:
+    move $t2, $t4              # 更新最小值 $t2 为当前值 $t4
+
+output:
+    move $a0, $t2              # 将最小值放到 $a0，准备打印
+    li $v0, 1                  # 系统调用号 1，打印整数
+    syscall                    # 调用系统服务打印最小值
+
+    li $v0, 10                 # 系统调用号 10，表示退出程序
+    syscall                    # 调用系统服务退出程序

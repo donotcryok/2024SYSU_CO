@@ -1,0 +1,36 @@
+.data
+source:   .word   3, 1, 4, 1, 5, 9, 0    # 定义source数组，包含整数，最后一个是0，表示结束
+dest:     .word   0, 0, 0, 0, 0, 0, 0    # 定义dest数组，初始化为0，用来存放复制的整数
+countmsg: .asciiz " values copied. "     # 定义输出消息
+
+.text
+
+main:   
+    la      $a0, source   # 将数组source的地址加载到寄存器 $a0
+    la      $a1, dest     # 将数组dest的地址加载到寄存器 $a1
+    li      $v0, 0        # 初始化计数器 $v0 为 0
+
+loop:   
+    lw      $v1, 0($a0)   # 从 source 数组读取一个整数到寄存器 $v1
+    addiu   $v0, $v0, 1   # 增加计数（即增加已复制的元素个数）
+    sw      $v1, 0($a1)   # 将寄存器 $v1 的值存储到 dest 数组中
+    addiu   $a0, $a0, 4   # 将 $a0 指向源数组中的下一个元素（4 字节偏移）
+    addiu   $a1, $a1, 4   # 将 $a1 指向目标数组中的下一个元素（4 字节偏移）
+    bne     $v1, $zero, loop  # 如果 $v1 不等于零，则继续循环
+
+loopend:
+    move    $a0, $v0      # 将计数器中的值（已复制的整数个数）移动到寄存器 $a0
+    li      $v0, 1        # 设置系统调用号为 1，用于打印整数
+    syscall               # 调用系统服务打印整数（已复制的非零整数个数）
+
+    la      $a0, countmsg # 将字符串" values copied. "的地址加载到寄存器 $a0
+    li      $v0, 4        # 设置系统调用号为 4，用于打印字符串
+    syscall               # 调用系统服务打印字符串
+
+    li      $a0, 0x0A     # 将换行符（ASCII 码 0x0A）加载到寄存器 $a0
+    li      $v0, 11       # 设置系统调用号为 11，用于打印字符
+    syscall               # 调用系统服务打印换行符
+
+finish:
+    li      $v0, 10       # 设置系统调用号为 10，表示退出程序
+    syscall               # 调用系统服务退出程序

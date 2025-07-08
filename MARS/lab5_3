@@ -1,0 +1,61 @@
+    .text
+main:
+    li  $v0, 1            # 打印 n1 和 n2 的值，应为 14 和 27
+    lw  $a0, n1
+    syscall
+    li  $v0, 11
+    li  $a0, ' '
+    syscall
+    li  $v0, 1
+    lw  $a0, n2
+    syscall
+    li  $v0, 11
+    li  $a0, '\n'
+    syscall
+    la  $a0, n1           # 将 n1 的地址加载到 $a0
+    la  $a1, n2           # 将 n2 的地址加载到 $a1
+    jal swap              # 调用 swap 函数
+    li  $v0, 1            # 打印 n1 和 n2 的值，应为 27 和 14
+    lw  $a0, n1
+    syscall
+    li  $v0, 11
+    li  $a0, ' '
+    syscall
+    li  $v0, 1
+    lw  $a0, n2
+    syscall
+    li  $v0, 11
+    li  $a0, '\n'
+    syscall
+    li  $v0, 10         
+    syscall
+
+swap:
+    # 保存 $fp 和返回地址 $ra
+    addi $sp, $sp, -8     # 为 $fp 和 $ra 分配空间
+    sw   $fp, 4($sp)      # 保存旧的 $fp 到栈中
+    sw   $ra, 0($sp)      # 保存 $ra 到栈中
+
+    # 设置新的帧指针 $fp
+    move $fp, $sp         # 设置 $fp 为当前 $sp 位置
+
+    # 为 temp 分配空间
+    addi $sp, $sp, -4
+
+    # swap
+    lw   $a2, 0($a0)     
+    sw   $a2, -4($fp)     
+    lw   $a2, 0($a1)      
+    sw   $a2, 0($a0)      
+    lw   $a2, -4($fp)   
+    sw   $a2, 0($a1)      
+
+    # 恢复 $fp 和 $ra
+    move $sp, $fp         # 将 $sp 恢复到 $fp 的位置
+    lw   $ra, 0($sp)      # 恢复 $ra
+    lw   $fp, 4($sp)      # 恢复 $fp
+    addi $sp, $sp, 8      # 释放栈空间
+    jr   $ra              # 返回主程序
+    .data
+n1: .word 14
+n2: .word 27

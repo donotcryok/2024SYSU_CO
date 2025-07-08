@@ -1,0 +1,53 @@
+    .data
+prompt: .asciiz "result: "
+
+    .text
+    .globl main
+main:   
+    li $a1, -6
+    li $a0, 100
+    
+    andi $t2, $a0, 0x80000000    # 检查被乘数符号
+    srl $t2, $t2, 31
+    bne $t2, 1, node0
+    not $a0, $a0
+    addi $a0, $a0, 1
+    
+node0:  
+    andi $t3, $a1, 0x80000000    # 检查乘数符号
+    srl $t3, $t3, 31
+    bne $t3, 1, node1
+    not $a1, $a1
+    addi $a1, $a1, 1
+
+node1:  
+    andi $t1, $a1, 1
+    
+path1:  
+    beq $t1, 0, node2
+path2:  
+    add $v1, $v1, $a0
+    
+node2:  
+    srl $a1, $a1, 1
+    sll $a0, $a0, 1
+    bnez $a1, node1
+    
+    xor $t2, $t2, $t3            # 检查符号
+    bne $t2, 1, end
+    sub $v1, $v1, 1
+    not $v1, $v1
+
+end:    
+    # 输出结果
+    li $v0, 4                    # 打印提示字符串
+    la $a0, prompt
+    syscall
+
+    li $v0, 1                    # 打印结果值
+    move $a0, $v1
+    syscall
+
+    # 退出
+    li $v0, 10
+    syscall
