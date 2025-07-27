@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../UART.srcs/sources_1/ip/fifo_8b/sim/fifo_8b.v" \
+"../../../../../../大二课件/2023级计组课件/LAB/UART/uart_rx.v" \
+"../../../../../../大二课件/2023级计组课件/LAB/UART/uart_tx.v" \
+"../../../../../../大二课件/2023级计组课件/LAB/UART/uart_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

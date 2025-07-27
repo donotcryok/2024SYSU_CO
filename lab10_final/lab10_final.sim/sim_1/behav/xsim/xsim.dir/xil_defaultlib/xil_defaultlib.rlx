@@ -1,0 +1,21 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sim_1/imports/lab10_final/testbench.v,1735551021,verilog,,,,testbench,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/adder.v,1734274088,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/alu.v,,adder,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/alu.v,1735473154,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/aludec.v,,alu,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/aludec.v,1735473230,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/controller.v,,aludec,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/controller.v,1735006034,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/datapath.v,,controller,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/datapath.v,1735572032,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/flopr.v,,datapath,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/flopr.v,1735573144,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/maindec.v,,flopr,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/maindec.v,1735006034,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/mips.v,,maindec,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/mips.v,1735473230,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/mux2.v,,mips,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/mux2.v,1735006034,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/regfile.v,,mux2,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/regfile.v,1735092604,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/signext.v,,regfile,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/signext.v,1603902724,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/sl2.v,,signext,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/sl2.v,1603902724,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/top.v,,sl2,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/top.v,1735006284,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sim_1/imports/lab10_final/testbench.v,,top,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/ip/data_ram/sim/data_ram.v,1735058064,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,,data_ram,,,,,,,,
+C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,1735474944,verilog,,C:/Users/Hao/Desktop/vivado/lab10_final/lab10_final.srcs/sources_1/imports/lab10_final/adder.v,,inst_rom,,,,,,,,

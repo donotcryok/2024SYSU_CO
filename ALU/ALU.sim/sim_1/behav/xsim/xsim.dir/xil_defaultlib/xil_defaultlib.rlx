@@ -1,0 +1,12 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/Hao/Desktop/vivado/ALU/ALU.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/Hao/Desktop/vivado/ALU/ALU.srcs/sources_1/ip/fifo_32b_2_8b/sim/fifo_32b_2_8b.v,1731985559,verilog,,C:/Users/Hao/Desktop/vivado/ALU/ALU.srcs/sources_1/new/alu.v,,fifo_32b_2_8b,,,,,,,,
+C:/Users/Hao/Desktop/vivado/ALU/ALU.srcs/sources_1/ip/fifo_8b_2_32b_1/sim/fifo_8b_2_32b.v,1731985670,verilog,,C:/Users/Hao/Desktop/vivado/ALU/ALU.srcs/sources_1/ip/fifo_32b_2_8b/sim/fifo_32b_2_8b.v,,fifo_8b_2_32b,,,,,,,,
+C:/Users/Hao/Desktop/vivado/ALU/ALU.srcs/sources_1/new/alu.v,1731988210,verilog,,C:/Users/Hao/Desktop/vivado/ALU/uart_rx.v,,alu,,,,,,,,
+C:/Users/Hao/Desktop/vivado/ALU/alu_top.v,1731988304,verilog,,,,alu_top,,,,,,,,
+C:/Users/Hao/Desktop/vivado/ALU/uart_rx.v,1729492380,verilog,,C:/Users/Hao/Desktop/vivado/ALU/uart_top.v,,uart_rx,,,,,,,,
+C:/Users/Hao/Desktop/vivado/ALU/uart_top.v,1731077666,verilog,,C:/Users/Hao/Desktop/vivado/ALU/uart_tx.v,,uart_top,,,,,,,,
+C:/Users/Hao/Desktop/vivado/ALU/uart_tx.v,1729492388,verilog,,C:/Users/Hao/Desktop/vivado/ALU/alu_top.v,,uart_tx,,,,,,,,

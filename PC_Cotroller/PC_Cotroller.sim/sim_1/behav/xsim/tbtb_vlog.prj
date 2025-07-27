@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PC_Cotroller.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" \
+"../../../../PC_Cotroller.srcs/sources_1/new/PC.v" \
+"../../../../../lab8_code_template/alu_dec.v" \
+"../../../../PC_Cotroller.srcs/sources_1/new/clk_div.v" \
+"../../../../../lab8_code_template/controller.v" \
+"../../../../../lab8_code_template/main_dec.v" \
+"../../../../../controller/tbtb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,35 @@
+        .data
+Z:      .space 200            # 定义Z数组，50个int，每个int占4字节，总共200字节
+Y:      .word 56              # 定义Y并赋值56
+
+        .text
+        .globl main
+main:
+        li $t0, 0              # t0 = k
+        li $t1, 56             # t1 = Y = 56
+        la $t2, Z              # t2 = Z数组的基址
+
+loop:
+        bge $t0, 50, end_loop  # 如果k >= 50, 跳出循环
+
+        li $t3, 4              # 将常数 4 存入寄存器 t3
+        div $t0, $t3           # t0 / t3，商存在LO寄存器
+        mflo $t3                # t3 = k / 4
+
+        li $t4, 210             # t4 = 210
+        add $t3, $t3, $t4       # t3 = k / 4 + 210
+
+        sll $t3, $t3, 4         # t3 = t3 * 16 (左移4位)
+
+        sub $t5, $t1, $t3       # t5 = Y - 16 * (k / 4 + 210)
+
+        sw $t5, 0($t2)          # 将t5存储到Z[k]，Z数组地址+t0（k）*4
+
+        addi $t0, $t0, 1        # k++
+        addi $t2, $t2, 4        # Z数组地址向后移4字节
+
+        j loop
+
+end_loop:
+        li $v0, 10            
+        syscall

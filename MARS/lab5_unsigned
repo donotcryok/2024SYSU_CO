@@ -1,0 +1,42 @@
+.data
+    prompt: .asciiz "Result: "
+    newline: .asciiz "\n"
+
+.text
+    .globl main
+
+main:
+    # 初始化寄存器
+    li $a0, 10            # 被乘数
+    li $a1, 3             # 乘数
+
+    # 使用无符号乘法进行计算
+    multu $a0, $a1        # 无符号乘法，将结果存入HI和LO
+
+    # 将结果存入 $t0 和 $t1
+    mflo $t0              # 将LO寄存器的结果（低32位）存入 $t0
+    mfhi $t1              # 将HI寄存器的结果（高32位）存入 $t1
+
+    # 打印提示信息
+    li $v0, 4
+    la $a0, prompt
+    syscall
+
+    # 打印低32位结果
+    li $v0, 1
+    move $a0, $t0
+    syscall
+
+    # 换行
+    li $v0, 4
+    la $a0, newline
+    syscall
+
+    # 打印高32位结果（如果有需要）
+    li $v0, 1
+    move $a0, $t1
+    syscall
+
+    # 退出程序
+    li $v0, 10
+    syscall

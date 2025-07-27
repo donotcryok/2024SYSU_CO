@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 31 10:37:27 2024
+# Process ID: 2068
+# Current directory: C:/Users/86157/Desktop/lab10_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11188 C:\Users\86157\Desktop\lab10_final\lab10_final.xpr
+# Log file: C:/Users/86157/Desktop/lab10_final/vivado.log
+# Journal file: C:/Users/86157/Desktop/lab10_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86157/Desktop/lab10_final/lab10_final.xpr
+update_compile_order -fileset sources_1

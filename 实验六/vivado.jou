@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov 12 11:19:23 2024
+# Process ID: 26412
+# Current directory: C:/Users/86157/Desktop/lab/实验六
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26280 C:\Users\86157\Desktop\lab\实验六\UART.xpr
+# Log file: C:/Users/86157/Desktop/lab/实验六/vivado.log
+# Journal file: C:/Users/86157/Desktop/lab/实验六\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86157/Desktop/lab/实验六/UART.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Write_Width_A {32} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/86157/Desktop/COE.coe}] [get_ips inst_rom]

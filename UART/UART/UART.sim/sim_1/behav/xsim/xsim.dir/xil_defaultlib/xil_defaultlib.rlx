@@ -1,0 +1,7 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/86157/Desktop/lab/UART/UART/UART.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/86157/Desktop/lab/UART/UART/UART.srcs/sources_1/ip/fifo_8b/sim/fifo_8b.v,1729557394,verilog,,C:/Users/86157/Desktop/lab/UART/UART/UART.srcs/sources_1/new/UART/uart_loop_tb.v,,fifo_8b,,,,,,,,
+C:/Users/86157/Desktop/lab/UART/UART/UART.srcs/sources_1/new/UART/uart_loop_tb.v,1729781574,verilog,,,,axi_uartlite_0_exdes_tb,,,,,,,,

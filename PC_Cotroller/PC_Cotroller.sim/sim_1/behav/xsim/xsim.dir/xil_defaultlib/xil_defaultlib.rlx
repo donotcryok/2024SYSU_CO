@@ -1,0 +1,19 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,1733147540,verilog,,C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/new/PC.v,,inst_rom,,,,,,,,
+C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/ip/r2u_data_fifo_1/sim/r2u_data_fifo.v,1733139678,verilog,,C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/ip/inst_rom/sim/inst_rom.v,,r2u_data_fifo,,,,,,,,
+C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/ip/u2r_cmd_fifo_1/sim/u2r_cmd_fifo.v,1733139579,verilog,,C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/ip/r2u_data_fifo_1/sim/r2u_data_fifo.v,,u2r_cmd_fifo,,,,,,,,
+C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/new/PC.v,1733144856,verilog,,C:/Users/86157/Desktop/lab8_code_template/alu_dec.v,,PC,,,,,,,,
+C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/new/clk_div.v,1733144856,verilog,,C:/Users/86157/Desktop/lab8_code_template/controller.v,,clk_div,,,,,,,,
+C:/Users/86157/Desktop/controller/tbtb.v,1733146823,verilog,,,,tbtb,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/alu_dec.v,1733144856,verilog,,C:/Users/86157/Desktop/PC_Cotroller/PC_Cotroller.srcs/sources_1/new/clk_div.v,,alu_dec,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/controller.v,1732462120,verilog,,C:/Users/86157/Desktop/lab8_code_template/main_dec.v,,controller,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/main_dec.v,1733144856,verilog,,C:/Users/86157/Desktop/controller/tbtb.v,,main_dec,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/proc_top.v,1733144856,verilog,,,,proc_top,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/sys_monitor.v,1732524099,verilog,,C:/Users/86157/Desktop/lab8_code_template/uart_rx.v,,sys_monitor,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/uart_rx.v,1729492379,verilog,,C:/Users/86157/Desktop/lab8_code_template/uart_top.v,,uart_rx,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/uart_top.v,1732461949,verilog,,C:/Users/86157/Desktop/lab8_code_template/uart_tx.v,,uart_top,,,,,,,,
+C:/Users/86157/Desktop/lab8_code_template/uart_tx.v,1729492387,verilog,,C:/Users/86157/Desktop/lab8_code_template/proc_top.v,,uart_tx,,,,,,,,

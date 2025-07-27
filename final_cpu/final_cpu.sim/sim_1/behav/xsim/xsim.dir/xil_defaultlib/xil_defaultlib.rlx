@@ -1,0 +1,23 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/Hao/Desktop/vivado/final_cpu/final_cpu.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/final_cpu.srcs/sim_1/new/tb_datapath.v,1733231213,verilog,,,,tb_datapath,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/final_cpu.srcs/sources_1/imports/controller_reretry2/clk_div.v,1732721783,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/controller.v,,clk_div,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/final_cpu.srcs/sources_1/ip/data_mem/sim/data_mem.v,1733228150,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/final_cpu.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,,data_mem,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/final_cpu.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,1733234362,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/adder.v,,inst_mem,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/adder.v,1603902724,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/alu.v,,adder,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/alu.v,1603902724,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/aludec.v,,alu,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/aludec.v,1733218915,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/final_cpu.srcs/sources_1/imports/controller_reretry2/clk_div.v,,aludec,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/controller.v,1603902724,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/datapath.v,,controller,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/datapath.v,1733243214,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/flopr.v,,datapath,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/flopr.v,1733234471,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/maindec.v,,flopr,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/maindec.v,1733218844,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/mips.v,,maindec,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/mips.v,1733158392,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/mux2.v,,mips,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/mux2.v,1733213948,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/regfile.v,,mux2,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/regfile.v,1733195513,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/signext.v,,regfile,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/signext.v,1603902724,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/sl2.v,,signext,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/sl2.v,1603902724,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/top.v,,sl2,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/rtl/top.v,1733231406,verilog,,C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/sim/testbench.v,,top,,,,,,,,
+C:/Users/Hao/Desktop/vivado/final_cpu/lab9_code_template/MIPS_core/sim/testbench.v,1733273471,verilog,,,,testbench,,,,,,,,

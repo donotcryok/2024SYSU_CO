@@ -1,0 +1,90 @@
+    .data
+prompt:      .asciiz "Enter : "  # 提示信息
+result_msg:  .asciiz "Result: "  # 结果提示信息
+
+    .text
+    .globl main
+
+main:
+    li $v0, 4                  # syscall: 打印字符串
+    la $a0, prompt             # 加载提示信息地址
+    syscall
+
+    # 读取用户输入的 32 位整数（8 位十六进制数）
+    li $v0, 5                  # syscall: 读取整数
+    syscall
+    move $t0, $v0              # 将输入的整数存储在 $t0 中
+
+    # 提取功能位（31-30）
+    andi $t1, $t0, 0xC0000000  # 提取功能位（31-30）
+    srl $t1, $t1, 30           # 右移 30 位，得到功能位（00 = 加法，01 = 减法，10 = 乘法，11 = 除法）
+
+    # 提取第一个输入数（低 15 位）
+    andi $t2, $t0, 0x00007FFF  # 提取第一个输入数（低 15 位）
+
+    # 提取第二个输入数（中间 15 位）
+    andi $t3, $t0, 0x7FFF0000  # 提取第二个输入数（中间 15 位）
+    srl $t3, $t3, 15           # 右移 15 位，将第二个输入数对齐
+
+    beq $t1, $zero, add_op     # 如果功能位是 00 (加法)
+    beq $t1, 1, sub_op         # 如果功能位是 01 (减法)
+    beq $t1, 2, mul_op         # 如果功能位是 10 (乘法)
+    beq $t1, 3, div_op         # 如果功能位是 11 (除法)
+
+add_op:
+    add $t4, $t2, $t3          # $t4 = $t2 + $t3
+    j finish_op
+
+# 减法操作
+sub_op:
+    sub $t4, $t2, $t3          # $t4 = $t2 - $t3
+    j finish_op
+
+# 乘法操作（使用加法模拟）
+mul_op:
+    move $t5, $zero            # $t5 = 0 (结果初始化)
+    move $t6, $t2              # $t6 = $t2 (第一个输入数)
+mul_loop:
+    beq $t3, $zero, finish_op  # 如果 $t3（第二个输入数）为 0，结束乘法
+    add $t5, $t5, $t6          # $t5 = $t5 + $t6
+    sub $t3, $t3, 1            # $t3 = $t3 - 1
+    j mul_loop
+
+# 除法操作（使用加减法模拟）
+div_op:
+    move $t5, $zero            # $t5 = 0 (商初始化)
+    move $t6, $t2              # $t6 = 被除数
+div_loop:
+    bge $t6, $t3, div_step     # 如果被除数 >= 除数，执行步骤
+    j finish_op
+
+div_step:
+    sub $t6, $t6, $t3          # 被除数减去除数
+    addi $t5, $t5, 1           # 商加 1
+    j div_loop
+
+finish_op:
+    # 打印结果提示信息
+    li $v0, 4                  # syscall: 打印字符串
+    la $a0, result_msg         # 加载结果提示信息地址
+    syscall
+
+    # 根据操作码打印结果
+    # 如果是加法或减法，结果在 $t4
+    # 如果是乘法或除法，结果在 $t5
+    beqz $t1, print_add_sub     # 如果是加法或减法，跳到加减法打印
+    bge $t1, 2, print_mul_div   # 如果是乘法或除法，跳到乘除法打印
+
+print_add_sub:
+    li $v0, 1                  # syscall: 打印整数
+    move $a0, $t4              # 打印加法或减法的结果
+    syscall
+    j finish_op_end
+
+print_mul_div:
+    li $v0, 1                  # syscall: 打印整数
+    move $a0, $t5              # 打印乘法或除法的结果
+    syscall
+
+finish_op_end:
+    jr $ra

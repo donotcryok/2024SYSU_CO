@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab9_code_template/MIPS_core/rtl/adder.v" \
+"../../../../lab9_code_template/MIPS_core/rtl/alu.v" \
+"../../../../lab9_code_template/MIPS_core/rtl/datapath.v" \
+"../../../../lab9_code_template/MIPS_core/rtl/flopr.v" \
+"../../../../lab9_code_template/MIPS_core/rtl/mux2.v" \
+"../../../../lab9_code_template/MIPS_core/rtl/regfile.v" \
+"../../../../lab9_code_template/MIPS_core/rtl/signext.v" \
+"../../../../lab9_code_template/MIPS_core/rtl/sl2.v" \
+"../../../../final_cpu.srcs/sim_1/new/tb_datapath.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

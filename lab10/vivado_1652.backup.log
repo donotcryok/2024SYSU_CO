@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jan  6 15:17:07 2025
+# Process ID: 1652
+# Current directory: C:/Users/86157/Desktop/lab10/lab10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8280 C:\Users\86157\Desktop\lab10\lab10\lab10.xpr
+# Log file: C:/Users/86157/Desktop/lab10/lab10/vivado.log
+# Journal file: C:/Users/86157/Desktop/lab10/lab10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86157/Desktop/lab10/lab10/lab10.xpr
+INFO: [Project 1-313] Project file moved from 'E:/project/lab10' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/86157/Desktop/lab10/lab9/MIPS_core/coe/mipstest.coe', nor could it be found using path 'E:/project/lab9/MIPS_core/coe/mipstest.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/15658/Desktop/spt_ts1.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/15658/Desktop/spt_fin.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/15658/Desktop/spt_final2.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1084.859 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  6 17:12:48 2025...
